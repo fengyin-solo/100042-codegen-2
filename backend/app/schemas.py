@@ -244,3 +244,15 @@ class AuditEntry(BaseModel):
     field_5: str | None = None  # 审核结论
     field_6: str | None = None  # 审核人员
     field_7: str | None = None  # 审核状态
+
+class VisitorEntry(BaseModel):
+    """访客通行明细结构。"""
+
+    field_0: str | None = None  # 访客编号
+    field_1: str | None = None  # 访客姓名
+    field_2: str | None = None  # 证件号码
+    field_3: str | None = None  # 来访事由
+    field_4: str | None = None  # 到访区域
+    field_5: str | None = None  # 陪同人员
+    field_6: str | None = None  # 通行证号
+    field_7: str | None = None  # 通行状态
